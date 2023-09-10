@@ -27,7 +27,7 @@ def menu_start():
             import rps
             rps.start_game()
         elif choice == "4":
-            print()
+            import bot
         elif choice == "5":
             print()
         elif choice == "6":
