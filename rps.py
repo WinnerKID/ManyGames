@@ -1,11 +1,5 @@
 import random
 
-def print_with_typing(text, delay=0.1):
-    for char in text:
-        print(char, end='', flush=True)
-        time.sleep(delay)
-    print()
-
 def start_game():
     while True:
         user_choice = input("Rock, paper, scissors, or exit to quit?\n").lower()
