@@ -8,9 +8,9 @@ def menu_start():
               '2. Talk to someone\n'
               '3. Rock, paper, scissors game\n'
               '4. AI chatbot(under construction)\n'
-              '5.\n'
-              '6. Exit')
-
+              '5. Play Tic-Tac-Toe\n'
+              '6. Exit\n'
+              '---------------------------------------\n')
         choice = input("Enter your choice: ")
 
         if choice == "1":

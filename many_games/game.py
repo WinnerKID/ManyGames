@@ -15,7 +15,6 @@ def guess_game():
             player_input = input("Enter your guess: ")
             if player_input == "exit":
                 import __main__
-                main.menu_start()
                 break
             # Convert the player's input to an integer for guessing
             player_guess = int(player_input)
@@ -29,7 +28,6 @@ def guess_game():
         if player_guess == secret_number:
             print(f"\nCongratulations! You guessed the number {secret_number} in {attempts} attempts.\n")
             import __main__
-            main.menu_start()
             break
         elif player_guess < secret_number:
             print("Higher.")
