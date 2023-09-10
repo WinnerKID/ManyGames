@@ -51,7 +51,7 @@ def check_all_messages(message):
     # print(f'Best match = {best_match} | Score: {highest_prob_list[best_match]}')
 
     if 'exit' in message:
-        import main
+        import __main__
         main.menu_start()
         return "exit"  # Return "exit" to trigger the exit action
 

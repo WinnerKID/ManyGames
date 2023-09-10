@@ -1,5 +1,5 @@
 import random
-import main  # Import the 'main' module for exit functionality
+
 
 def guess_game():
     # Generate a random number between 1 and 100
@@ -14,7 +14,7 @@ def guess_game():
         try:
             player_input = input("Enter your guess: ")
             if player_input == "exit":
-                import main
+                import __main__
                 main.menu_start()
                 break
             # Convert the player's input to an integer for guessing
@@ -28,7 +28,7 @@ def guess_game():
         # Check if the guess is correct
         if player_guess == secret_number:
             print(f"\nCongratulations! You guessed the number {secret_number} in {attempts} attempts.\n")
-            import main
+            import __main__
             main.menu_start()
             break
         elif player_guess < secret_number:

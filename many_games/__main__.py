@@ -1,4 +1,3 @@
-import time
 from utils import print_with_typing
 
 def menu_start():
@@ -21,13 +20,12 @@ def menu_start():
         elif choice == "2":
             # Import and run chatbot
             print_with_typing("Someone will come and talk to you...")
-            import chatbot
             break
         elif choice == "3":
             import rps
             rps.start_game()
         elif choice == "4":
-            import bot
+            pass
         elif choice == "5":
             print()
         elif choice == "6":

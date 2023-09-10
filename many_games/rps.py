@@ -5,7 +5,7 @@ def start_game():
         user_choice = input("Rock, paper, scissors, or exit to quit?\n").lower()
         if user_choice == "exit":
             print("Thanks for playing! Exiting the game.")
-            import main
+            import __main__
             main.menu_start()
             break
 
