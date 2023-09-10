@@ -6,7 +6,7 @@ def start_game():
         if user_choice == "exit":
             print("Thanks for playing! Exiting the game.")
             import __main__
-            main.menu_start()
+            __main__.menu_start()
             break
 
         choices = ["rock", "paper", "scissors"]

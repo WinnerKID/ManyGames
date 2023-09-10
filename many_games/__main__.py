@@ -20,6 +20,7 @@ def menu_start():
         elif choice == "2":
             # Import and run chatbot
             print_with_typing("Someone will come and talk to you...")
+            import chatbot
             break
         elif choice == "3":
             import rps

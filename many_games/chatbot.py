@@ -52,7 +52,7 @@ def check_all_messages(message):
 
     if 'exit' in message:
         import __main__
-        main.menu_start()
+        __main__.menu_start()
         return "exit"  # Return "exit" to trigger the exit action
 
     return long.unknown() if highest_prob_list[best_match] < 1 else best_match
